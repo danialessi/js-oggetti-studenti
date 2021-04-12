@@ -51,18 +51,11 @@
         var thisStudent = classe[i];
         console.log('studente: ', thisStudent);
 
-        // thisStudent rappresenta ogni oggetto 
-        // eseguo un ciclo for in per sfogliare ogni oggetto presente nell'array 
-        for (var property in thisStudent) {
-            var thisProperty = thisStudent[property];
-            
-            // se la proprietà corrisponde al nome e al cognome stampali 
-                if (thisProperty == thisStudent.name) {
-                    console.log('name: ', thisProperty);
-                } else if (thisProperty == thisStudent.surname) {
-                    console.log('surname: ', thisProperty);
-                }
-        }
+        // thisStudent rappresenta ogni oggetto (studente)
+        // stampo nome e cognome di ogni studente  
+            console.log(thisStudent.name);
+            console.log(thisStudent.surname);
+        
     }
 
 // aggiungo nuovo oggetto da prompt dell'utente
