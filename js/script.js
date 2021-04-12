@@ -63,8 +63,13 @@
     }
 
 // aggiungo nuovo oggetto da prompt dell'utente
-    // var user = {
-    //     'name' : prompt("inserisci il tuo nome"),
-    //     'surname' : prompt("inserisci il tuo cognome"),
-    //     'age' : prompt("inserisci la tua età")
-    // }
+    var user = {
+        'name' : prompt("inserisci il tuo nome"),
+        'surname' : prompt("inserisci il tuo cognome"),
+        'age' : parseInt(prompt("inserisci la tua età"))
+    }
+
+// pusho il nuovo utente dentro la classe studenti
+    classe.push(user);
+
+    console.log('array dopo inserimento utente: ', classe);
