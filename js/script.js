@@ -15,7 +15,10 @@
 
 // stampo a schermo le proprietà dell'oggetto con un ciclo for in
     for (var key in student) {
-        // console.log('proprietà:', key);
+        var thisKey = key;
+        console.log('proprietà: ', thisKey);
+        var keyValue = student[key];
+        console.log('valore: ', keyValue);
     }
 
 // creo un array di oggetti di studenti 
@@ -69,7 +72,7 @@
         'age' : parseInt(prompt("inserisci la tua età"))
     }
 
-// pusho il nuovo utente dentro la classe studenti
+// // pusho il nuovo utente dentro la classe studenti
     classe.push(user);
 
     console.log('array dopo inserimento utente: ', classe);
