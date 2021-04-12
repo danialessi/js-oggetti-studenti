@@ -51,8 +51,14 @@
         // thisStudent rappresenta ogni oggetto 
         // eseguo un ciclo for in per sfogliare ogni oggetto presente nell'array 
         for (var property in thisStudent) {
-            console.log(property)
-            console.log('valore: ', thisStudent[property]);
+            var thisProperty = thisStudent[property];
+            
+            // se la proprietà corrisponde al nome e al cognome stampali 
+                if (thisProperty == thisStudent.name) {
+                    console.log('name: ', thisProperty);
+                } else if (thisProperty == thisStudent.surname) {
+                    console.log('surname: ', thisProperty);
+                }
         }
     }
 
